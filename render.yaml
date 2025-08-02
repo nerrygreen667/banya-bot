@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: banya-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    runtime: python
+    pythonVersion: 3.10
